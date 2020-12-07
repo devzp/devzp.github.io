@@ -40,6 +40,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 const App = () =>
 React.createElement("div", { id: "display", className: "display" },
 React.createElement("h1", null, "Play a sound"),
+                    React.createElement("h3", null, "by Devansh"),
 sounds.map((sound, idx) =>
 React.createElement(DrumPad, { text: sound.key, key: idx, audio: sound.mp3 })));
 
